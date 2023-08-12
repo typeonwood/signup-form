@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Norse Bold';
+    src: url(Norse-Bold.otf);
+}
+
+html, body {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.unit > input:focus {
+    border-color: blue;
+    box-shadow: inset 0 0 2px 2px rgb(195, 195, 195);
+}
+
+.unit > input:not(:placeholder-shown):invalid {
+    border-color: red;
+}
+
+.left-box {
+    height: 100%;
+    width: max(300px, 40%);
+    background-image: url('halie-west-25xggax4bSA-unsplash.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-box .logo {
+    font-size: 4rem;
+    font-family: 'Norse Bold';
+    color: white;
+    position: relative;
+    top: 30%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.545);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+}
+
+.logo p {
+    margin: 0;
+    margin-top: 18px;
+}
+
+.credit {
+    align-self: center;
+    font-size: .65rem;
+    color: rgba(255, 255, 255, 0.709);
+}
+
+.credit a {
+    color: white;
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.709);
+}
+
+.right-box {
+    height: 100%;
+    width: max(450px, 60%);
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form > h2 {
+    padding: 36px;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.card {
+    width: 100%;
+    height: 200px;
+    box-shadow: 0 12px 8px -8px rgb(195, 195, 195);
+    background-color: white;
+    padding-top: 12px;
+    padding-left: 36px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.inputs {
+    display: flex;
+    height: 80%;
+    gap: 64px;
+    color: rgb(98, 98, 98);
+}
+
+.col-1, .col-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.unit {
+    display: flex;
+    flex-direction: column;
+    font-size: .6rem;
+    font-weight: 500;
+}
+
+.unit > input {
+    width: 200px;
+    height: 24px;
+    border: 1px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: rgba(118, 118, 118, 0.115);
+    background-color: rgb(253, 253, 253);
+}
+
+a {
+   text-decoration: none; 
+   color: #596d48;
+   font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form > p {
+    padding-left: 36px;
+    margin: 0;
+    font-size: .9rem;
+}
+
+.submit {
+    padding: 36px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #596d48;
+    color: white;
+    font-size: .9rem;
+    font-weight: 500;
+    box-shadow: 0 8px 4px -4px rgb(195, 195, 195);
+    margin: 36px;
+    margin-bottom: 24px;
+}
+
+.submit:hover {
+    cursor: pointer;
+}
